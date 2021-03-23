@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>JVM</title>
+<link rel="stylesheet" href="topic.css">
+</head>
+<body>
+
+<img src="img/JVM.jpg" alt="JVM" width="900" height="700">
+
+<h1>JVM</h1>
+<p>
+Parent class of JVM is known as class loader subsystem 
+Jvm is not physically available 
+During class, loading JVM work in three-phase
+</p>
+<h1>
+1)Loading Phase:-
+     <ul>
+<li>a)Application class loader</li>
+<li>b)Extention class loader</li>
+<li>c)Bootstrap class loder</li> 
+</ul>
+
+2)Linking phase:-
+
+3) Initialization phase:-
+
+</h1> 
+<h1>a) Application class Loader:-</h1>
+<p>
+it’s a chile class of extension class loader 
+It takes a class to execute by mention “Environment Variable”
+Or Manual path (set path).
+</p>
+<h1>b) Extension class Loader</h1> 
+<p>
+It is a child class of application class loader.
+It verifies prototype for extension of execution application
+It sends all the information for its parent class
+</p>
+
+<h1>c) BootStrap Class Loader</h1>
+<p>
+It is a parent class of extension class loader 
+Bootstrap class loader provides Environment for application by using rt.jar file 
+</p>
+
+<h1>Phase 2 
+
+Linking
+</h1> 
+<p>After loading a class linking process will be executed /stored during linking process unchecked exception will verify by JVM
+</p>
+<h1>Initialization phase</h1>
+<p>
+If an unchecked exception does not occur by JVM initiation will be started.
+Object class is responsible for instanciation.
+Once the initialization process memory/resources will be occupied 
+</p>
+</h1>a)class area:-</h1> 
+<p>class area memory used to store the structure of the class.
+non-static elements will be considered in class area memory.
+</p>
+<h1>b)Heap memory</h1>
+</p> 
+It is used to store object,non-static variable and methods.
+It contains a metaspace special memory area to store static variable and methods.
+</p>
+<h1>c)Stack area </h1><p>
+Stack memory is faster than heap memory.
+It used to store local variable.</p> 
+<h1>d)pc register</h1>
+<p>it contains instruction and specification for memory management 
+</p>
+<h1>
+JNI (Java Native Interface)
+</h1>
+<p>JNI gives an environment for external application.</p>
+
+
+</body>
+</html>
