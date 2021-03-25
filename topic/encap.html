@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Types of Java </title>
+<link rel="stylesheet" href="topic.css">
+</head>
+<body>
+
+<h1>Encapsulation :-</h1>
+<p>
+
+Encapsulation is a data binding process in data binding process. 
+In binding process data hide by making property as a private 
+to manipulate thus properties we can write setter and getter method. 
+to display a class we can overside tostring method of object class .
+encapsulated class is 100% conceder as concrete class.
+<h1>Example</h1><br>
+<h1>class product_encapsulation //run the program of shop.java first</h><br>
+{<br>
+private int id;<br>
+private String name;<br>
+private String des;<br>
+private double price;<br>
+
+//setter<br>
+	public void setid(int id)<br>
+{<br>
+	this.id=id;<br>
+}<br>
+	public void setname(String name)<br>
+{<br>
+	this.name=name;<br>
+}<br>
+	public void setdes(String des)<br>
+{<br>
+	this.des=des;<br>
+}<br>
+	public void setprice(double price)<br>
+{<br>
+	this.price=price;<br>
+}<br>
+//getter<br>
+
+	public int getid()<br>
+{<br>
+	return id;<br>
+}<br>
+	public String getname()<br>
+{<br>
+	return name;<br>
+}<br>
+	public String getdes()<br>
+{<br>
+	return des;<br>
+}<br>
+	public double getprice()<br>
+{<br>
+	return price;<br>
+}<br>
+
+	public String toString()<br>
+{<br>
+	return "id =    " + id    +<br>
+	       ",name = " + name  +<br>
+	       ",price= " + price +    <br>
+               ",des=   " + des   +<br>
+		"--" + printMe("who", "ABC");<br>
+}<br>
+
+public String printMe(String what, String value){<br>
+	return what + " -- " + value;	<br>
+}<br>
+}<br>
+***********************************************************<br>
+class shop_encapsulation<br>
+{<br>
+	void addproduct_encapsulation(product_encapsulation p)<br>
+	{<br>
+	System.out.println(p.toString());<br>
+	}<br>
+<br>
+public static void main(String args[])<br>
+	{<br>
+	shop_encapsulation s=new shop_encapsulation();<br>
+	product_encapsulation p=new product_encapsulation();<br>
+	p.setid(04);<br>
+	p.setname("XYZ");<br>
+	p.setdes("Car");<br>
+	p.setprice(80);<br>
+	s.addproduct_encapsulation(p);<br>
+	}<br>
+<br>
+	}<br>
+</p>
+</body>
+</html>

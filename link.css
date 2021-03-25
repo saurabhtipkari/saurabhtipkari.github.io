@@ -1,0 +1,47 @@
+#topic ul
+{
+ list-style:none;
+}
+#topic ul li
+{
+margin:left:140px;
+}
+
+#topic ul li a
+{
+background-color:cyan;
+border:1px solid white;
+width:140px;
+height:45px;
+line-height:35px;
+text-align:center;
+position:relative;
+border-radius:8px;
+
+}
+#topic ul li a
+{
+text-decoration:none;
+color:black;
+display:block;
+}
+#topic ul li a.hover
+{
+background-color:green;
+border-radius:8px;
+}
+
+#topic ul ul
+{
+position:absolute;
+display:none;
+
+}
+
+#topic ul li:hover > ul
+{
+display:block;
+}
+
+
+}

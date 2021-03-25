@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Types of Java </title>
+<link rel="stylesheet" href="topic.css">
+</head>
+<body>
+
+<h1>Interface:-</h1>
+<p>
+create interface we use "interface" keyword.
+interface is 0 implemented class.
+interface contains all abstract method.
+all abstract method have a public access specifier by default.
+interface can have properties ,Automatically this properties are final and public by default.
+interface can have used to achieve polymorphism multiple inheritance and loose coupling.
+Save program car.java
+<br>
+interface car<br>
+{<br>
+int max=150;<br>
+void wheel();<br>
+void color();<br>
+void speed();<br>
+}<br>
+
+************<br>
+save program Honda.java<br>
+<br>
+class Honda implements car<br>
+{<br>
+public void wheel()<br>
+{<br>
+System.out.println("4 wheel");<br>
+}<br>
+public void color()<br>
+{<br>
+System.out.println("black");<br>
+}<br>
+public void speed()<br>
+{<br>
+System.out.println("40");<br>
+}<br>
+
+public static void main(String args[])<br>
+{<br>
+Honda h=new Honda();<br>
+h.wheel();<br>
+h.color();<br>
+h.speed();<br>
+//h.max=100; we cant modified value into variable due to final<br>
+}<br>
+}<br>
+
+</p>
+</body>
+</html>

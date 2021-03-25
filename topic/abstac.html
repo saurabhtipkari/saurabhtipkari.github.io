@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Types of Java </title>
+<link rel="stylesheet" href="topic.css">
+</head>
+<body>
+
+<h1>Abstraction :-</h1>
+<p>
+abstraction is a process of implementation hiding.
+one class can have abstract and non abstract method as well.
+if any class contains single abstraction ,automatically non implemented Method can be considered as a abstract.
+class can be concrete as 0 to 100% implemented class.
+once a class declared as an abstract object creation cannot be possible.
+we can only call a method directly or overridden hence implementation will be hidden.
+
+<h1>Example:-</h1>
+abstract class opration<br>
+	{<br>
+		public void add(int a,int b)<br>
+		{<br>
+			System.out.println(a+b);<br>
+		}<br>
+		public void sub(int a,int b)<br>
+		{<br>
+			System.out.println(a-b);<br>
+		}<br>
+		public void mul(int a,int b)<br>
+		{<br>
+			System.out.println(a*b);<br>
+		}<br>
+}<br>
+class cal extends opration<br>
+{<br>
+public void div(int a,int b)<br>
+		{<br>
+			System.out.println(a/b);<br>
+		}<br>
+
+public void mul(int a,int b)<br>
+		{<br>
+			System.out.println("My method "+(a/b));<br>
+		}<br>
+}<br>
+<br>
+class abstration<br>
+{<br>
+public static void main(String args[])<br>
+{<br>
+cal c=new cal();<br>
+c.add(20,60);<br>
+c.mul(3,2);<br>
+}<br>
+}<br>
+</p><br>
+
+</body><br>
+</html><br>

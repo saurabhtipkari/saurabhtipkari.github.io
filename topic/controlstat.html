@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>java intro </title>
+<link rel="stylesheet" href="topic.css">
+</head>
+<body>
+
+<h1>Control Structure</h1>
+<h1>1) if_:- </h1>
+<ul>
+<li>-if the condition requires a boolean true value.
+<li>-we can use relational operators and logical operator to check a condition.
+<li>-we can write two more statements into if condition.
+<li>-we can write a condition without using else.
+-else past execute only will become false.
+</li>
+</ul>
+<h1>Example :-</h1>
+save program with class name if_demo.java <br>
+
+class if_demo<br>
+{<br>
+public static void main(String args[])<br>
+{  <br>
+  if(true)<br>
+	{<br>
+	System.out.println("True block printed false block is terminated");<br>
+	}<br>
+else<br>
+	{<br>
+	System.out.println("False block");<br>
+	}<br>
+	}<br>
+}<br>
+
+
+
+
+
+<h1>2)if_else_if :-</h1>
+
+<li>-This condition also known as ladder _if condition.
+<li>-the compiler will check every condition from top to bottom.
+<li>-if any condition satisfied inner statement will be executed, the rest part will be ignored by the compiler.
+<li>-Else part will be executed only condition will not satisfy by any if block. 
+
+<h1>Example:-</h1>
+ 
+ class if_else_if<br>
+{<br>
+public static void main(String args[])<br>
+	{<br>
+	int time=10;<br>
+
+	if(time>=00 && time<=12)<br>
+	{<br>
+	System.out.println("Good Morning");<br>
+	}<br>
+ elseif(time>=12 && time<=17)<br>
+	{<br>
+   System.out.println("Good Afternon");<br>
+	}<br>
+elseif(time>17 && time<24)<br>
+	{<br>
+System.out.println("Good Evening");<br>
+	}<br>
+}<br>
+}<br>
+
+
+<h1>3)Nested_if _else:-</h1>
+
+<li>-When required to check a condition multiple time, we can use nested_if.
+<li>-here if block can inner if block.
+<h1>Example:-</h1>
+
+class nest_if<br>
+{<br>
+	public static void main(String args[])<br>
+	{<br>
+		int x=10;<br>
+		int y=20;<br>
+		int z=30;<br>
+	
+		if(x>y)<br>
+		{<br>
+			if(x>z)<br>
+			{<br>
+			System.out.println("X is gr8ter"+x);<br>
+			}<br>
+		   else<br>
+			{<br>
+   			System.out.println("Y is gr8ter"+y);<br>
+			}<br>
+		}<br>
+else<br>
+	{<br>
+		if(y>z)<br>
+		{<br>
+		System.out.println("Y is gr8ter"+y);<br>
+		}<br>
+		else<br>
+		{<br>
+		System.out.println("Z is gr8ter"+z);<br>
+		}<br>
+	}  <br>
+}<br>
+}	<br>
+
+<h1>4)Switch:-</h1>
+<li>-Switch condition can be considered's false the other.
+<li>-we can check only one variable at a time using a switch condition.
+<li>-There can be inner switch into switch condition
+<li>-we can check values by using the "case" keyword.
+
+<li>Note:-
+<li>-when the case satisfied, the rest else will be executed.
+<li>-To overcome this problem we can use the "Break" keyword.
+<li>-if the case not executed default part will be executed, the default block can be developed using the "default" keyword
+</ul>
+<h1>Example:-</h1>
+class switch_eg<br>
+{<br>
+ public static void main(String args[])<br>
+  {<br>
+   int a=2;<br>
+	switch(a)<br>
+	{<br>
+		case 1:<br>
+		{<br>
+			
+			System.out.println("Coffie");<br>
+			break;<br>
+			}<br>
+		case 2:<br>
+			{<br>
+			System.out.println("Tea");<br>
+			break;<br>
+			}	<br>
+		case 3:<br>
+			{<br>
+			System.out.println("Green Tea");<br>
+			break;<br>
+			}	<br>
+		case 4:<br>
+			{<br>
+			System.out.println("Black Coffie");<br>
+			break;<br>
+			}	<br>
+		default:<br>
+			{<br>
+			System.out.println("Out of number"+a);<br>
+			break;<br>
+			}<br>
+		  };<br>
+		}<br>
+	}<br>
+
+</p>
+
+</body>
+</html>
