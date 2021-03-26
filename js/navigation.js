@@ -1,6 +1,8 @@
-function goToLoginPage(){
-	console.log("in goToLoginPage");
+function goToLoginPage()
+{
+console.log("in goToLoginPage");
 	//location.replace("index.html");
-	//ok();
+	
+//ok();
 	document.location.href="index.html";
 }
